@@ -19,7 +19,7 @@ const Comment = ({ comment }) => {
 							{userProfile.username}
 						</Text>
 					</Link>
-					<Text fontSize={14}>{comment.comment}</Text>
+					<Text color={"balck"} fontSize={14}>{comment.comment}</Text>
 				</Flex>
 				<Text fontSize={12} color={"gray"}>
 					{timeAgo(comment.createdAt)}

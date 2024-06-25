@@ -69,6 +69,7 @@ const PostFooter = ({ post, isProfilePage, creatorProfile }) => {
 							onChange={(e) => setComment(e.target.value)}
 							value={comment}
 							ref={commentRef}
+							color={"white"}
 						/>
 						<InputRightElement>
 							<Button

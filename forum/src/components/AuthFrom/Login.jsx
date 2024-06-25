@@ -4,20 +4,11 @@ import useLogin from "../../hooks/useLogin";
 
 const Login = () => {
 	const [inputs, setInputs] = useState({
-		email: "",
 		password: "",
 	});
 	const { loading, error, login } = useLogin();
 	return (
 		<>
-			<Input
-				placeholder='Email'
-				fontSize={14}
-				type='email'
-				size={"sm"}
-				value={inputs.email}
-				onChange={(e) => setInputs({ ...inputs, email: e.target.value })}
-			/>
 			<Input
 				placeholder='Password'
 				fontSize={14}
@@ -40,7 +31,7 @@ const Login = () => {
 				isLoading={loading}
 				onClick={() => login(inputs)}
 			>
-				Log in
+				Log In
 			</Button>
 		</>
 	);
