@@ -69,7 +69,7 @@ import {
 			onClick={onOpen}
 		  >
 			<CreatePostLogo />
-			<Box display={{ base: "none", md: "block" }}>Create</Box>
+			<Box  display={{ base: "none", md: "block" }}>Create</Box>
 		  </Flex>
 		</Tooltip>
   
@@ -99,11 +99,11 @@ import {
   
 			  <BsFillImageFill
 				onClick={() => imageRef.current.click()}
-				style={{ marginTop: "15px", marginLeft: "5px", cursor: "pointer" }}
+				style={{ marginTop:  "15px", marginLeft: "5px", cursor: "pointer" }}
 				size={16}
 			  />
 			  {selectedFile && (
-				<Flex mt={5} w="full" position="relative" justifyContent="center">
+				<Flex mt={5} w="full"  position="relative" justifyContent="center">
 				  <Image src={selectedFile} alt="Selected img" />
 				  <CloseButton
 					position="absolute"
@@ -118,7 +118,7 @@ import {
 			</ModalBody>
   
 			<ModalFooter>
-			  <Button mr={3} onClick={handlePostCreation} isLoading={isLoading} bg="blue.500" // Set background color to blue
+			  <Button  mr={3} onClick={handlePostCreation} isLoading={isLoading} bg="blue.500" // Set background color to blue
   color="white">
 				Post
 			  </Button>
