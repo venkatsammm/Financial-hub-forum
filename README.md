@@ -1,6 +1,4 @@
-Sure! Here is an in-depth description of the Forum feature for your README file:
 
----
 
 ### Forum Feature
 
