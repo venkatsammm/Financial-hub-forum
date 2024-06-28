@@ -7,6 +7,7 @@ const Login = () => {
 		password: "",
 	});
 	const { loading, error, login } = useLogin();
+
 	return (
 		<>
 			<Input
@@ -16,6 +17,8 @@ const Login = () => {
 				type='password'
 				value={inputs.password}
 				onChange={(e) => setInputs({ ...inputs, password: e.target.value })}
+				borderColor='blue.500'
+				focusBorderColor='blue.500'
 			/>
 			{error && (
 				<Alert status='error' fontSize={13} p={2} borderRadius={4}>
