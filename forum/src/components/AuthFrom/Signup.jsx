@@ -3,6 +3,7 @@ import { Alert, AlertIcon, Button, Input, InputGroup, InputRightElement } from "
 import { useState } from "react";
 import useSignUpWithEmailAndPassword from "../../hooks/UseSignUpWithEmailAndPassword";
 
+
 const Signup = () => {
 	const [inputs, setInputs] = useState({
 		fullName: "",
@@ -22,6 +23,8 @@ const Signup = () => {
 				size={"sm"}
 				value={inputs.email}
 				onChange={(e) => setInputs({ ...inputs, email: e.target.value })}
+				borderColor='blue.500'
+				focusBorderColor='blue.500'
 			/>
 			<Input
 				placeholder='Username'
@@ -30,6 +33,8 @@ const Signup = () => {
 				size={"sm"}
 				value={inputs.username}
 				onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
+				borderColor='blue.500'
+				focusBorderColor='blue.500'
 			/>
 			<Input
 				placeholder='Full Name'
